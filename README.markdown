@@ -37,7 +37,7 @@ You can define following options
 Simple Tooltip is meant to be really simple. Just use this basic CSS and modify it to your needs:
 
 
-    #tooltip-margin {
+    #rstooltip {
     	width: 150px;
     	background-color: rgb(255,255,255);
     	background: rgba(255,255,255,0.9);
@@ -48,7 +48,7 @@ Simple Tooltip is meant to be really simple. Just use this basic CSS and modify 
     	-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,0.7);
     }
     
-    #tooltip {
+    #rstooltip .content {
     	padding: 5px;
     	color: #000;
     }

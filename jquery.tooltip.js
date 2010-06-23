@@ -40,7 +40,7 @@
 					$(this).attr("title",null);
 					
 					// Tooltip erstellen
-					$("body").append("<div id=\"tooltip-margin\"><div id=\"tooltip\">"+this.t+"</div></div>");
+					$("body").append("<div id=\"rstooltip\"><div class=\"content\">"+this.t+"</div></div>");
 					
 					// Position festlegen
 					var top_position = (e.pageY + options['offset_y']);
@@ -52,7 +52,7 @@
 					}
 					
 					// Positionieren
-					$("#tooltip-margin").css({
+					$("#rstooltip").css({
 						"position":"absolute",
 						"top": top_position+"px",
 						"left": left_position+"px"
@@ -61,7 +61,7 @@
 				
 			}, function() {
 				this.title = this.t
-				$("#tooltip-margin").remove();
+				$("#rstooltip").remove();
 			})
 		});
 	}
